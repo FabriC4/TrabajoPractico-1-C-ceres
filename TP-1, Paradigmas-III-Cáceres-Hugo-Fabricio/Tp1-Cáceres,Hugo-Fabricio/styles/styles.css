@@ -1,0 +1,309 @@
+/* --- Estilo General del Cuerpo de la Página --- */
+body {
+    font-family: 'Times New Roman', Times, serif, sans-serif; /* Define la fuente utilizada en la página */
+    background-image: url('../imagenes/allianzArena.jpg'); /* Establece una imagen de fondo */
+    background-size: cover; /* Ajusta la imagen para que cubra toda el área del fondo */
+    background-repeat: no-repeat; /* Evita que la imagen de fondo se repita */
+    background-position: center; /* Centra la imagen de fondo en la pantalla */
+    background-attachment: fixed; /* Fija la imagen de fondo para que no se mueva con el scroll */
+    color: rgb(255, 255, 255); /* Define el color del texto en blanco */
+    padding: 100px; /* Añade un padding (espacio interno) de 100px alrededor del contenido de la página */
+    padding-top: 150px; /* Añade un padding superior adicional para evitar que el contenido se superponga con la cabecera fija */
+}
+
+/* --- Estilo del Contenedor del Rectángulo Transparente --- */
+.rectangulo-transparente {
+    background-color: rgba(0, 64, 155, 0.8); /* Aplica un fondo azul semitransparente */
+    padding: 20px; /* Añade un padding interno de 20px alrededor del contenido */
+    border-radius: 10px; /* Redondea las esquinas del rectángulo */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Añade una sombra sutil para dar profundidad al rectángulo */
+    width: 100%; /* Hace que el rectángulo ocupe todo el ancho de la pantalla */
+    box-sizing: border-box; /* Incluye el padding y el borde en el ancho total del elemento */
+    position: fixed; /* Fija el rectángulo en la parte superior de la pantalla */
+    top: 0; /* Posiciona el rectángulo en la parte superior de la página */
+    left: 0; /* Alinea el rectángulo con el borde izquierdo de la pantalla */
+    z-index: 999; /* Asegura que el rectángulo esté por delante de otros elementos en la página */
+    height: 120px; /* Define la altura del rectángulo */
+}
+
+/* --- Estilo del Contenedor de la Cabecera --- */
+header {
+    width: 100%; /* Hace que la cabecera ocupe todo el ancho disponible */
+    padding: 0; /* Elimina el padding interno de la cabecera */
+}
+
+/* --- Contenedor del Logo y el Título --- */
+.header-container {
+    display: flex; /* Utiliza flexbox para alinear los elementos en una línea horizontal */
+    justify-content: space-between; /* Distribuye el espacio uniformemente entre el logo y el título */
+    align-items: center; /* Alinea los elementos verticalmente en el centro */
+}
+
+/* --- Estilo del Contenedor del Logo y el Título --- */
+.logo-titulo-container {
+    display: flex; /* Utiliza flexbox para alinear el logo y el título en una línea horizontal */
+    align-items: center; /* Alinea verticalmente el logo y el título en el centro */
+    position: relative; /* Establece una posición relativa para ajustar el z-index */
+    z-index: 1000; /* Asegura que el contenedor del logo y título esté por encima de otros elementos */
+}
+
+/* --- Estilo del Logo --- */
+.logo {
+    height: 50px; /* Define la altura del logo */
+    width: auto; /* Ajusta el ancho del logo automáticamente manteniendo las proporciones */
+    margin-right: 15px; /* Añade un espacio a la derecha del logo */
+    z-index: 1001; /* Asegura que el logo esté por encima de otros elementos */
+}
+
+/* --- Estilo del Título con Marco --- */
+.titulo-con-marco {
+    border: 3px solid white; /* Añade un borde blanco alrededor del título */
+    padding: 10px; /* Añade un padding interno de 10px alrededor del título */
+    border-radius: 10px; /* Redondea las esquinas del título */
+    background-color: rgba(0, 49, 162, 0.7); /* Aplica un fondo azul semitransparente detrás del título */
+}
+
+/* --- Estilo del Contenedor de Login --- */
+.login-container {
+    display: flex; /* Utiliza flexbox para alinear los elementos de login en una línea horizontal */
+    align-items: center; /* Alinea verticalmente los elementos de login en el centro */
+}
+
+.login-container input[type="email"],
+.login-container input[type="password"] {
+    margin-right: 10px; /* Añade un espacio a la derecha de los campos de entrada */
+    padding: 5px; /* Añade un padding interno de 5px dentro de los campos de entrada */
+    border: 1px solid white; /* Añade un borde blanco alrededor de los campos de entrada */
+    border-radius: 5px; /* Redondea las esquinas de los campos de entrada */
+    background-color: rgba(255, 255, 255, 0.2); /* Aplica un fondo blanco semitransparente a los campos de entrada */
+    color: white; /* Define el color del texto dentro de los campos de entrada en blanco */
+}
+
+.login-container input[type="submit"] {
+    padding: 5px 10px; /* Añade un padding interno de 5px en los lados y 10px arriba/abajo del botón */
+    border: 1px solid white; /* Añade un borde blanco al botón */
+    border-radius: 5px; /* Redondea las esquinas del botón */
+    background-color: rgba(42, 35, 132, 0.7); /* Aplica un fondo azul oscuro semitransparente al botón */
+    color: white; /* Define el color del texto del botón en blanco */
+    cursor: pointer; /* Cambia el cursor a un puntero cuando se pasa por encima del botón */
+}
+
+.login-container a {
+    color: white; /* Define el color del enlace de registro en blanco */
+    text-decoration: none; /* Elimina el subrayado del enlace de registro */
+    margin-left: 10px; /* Añade un espacio a la izquierda del enlace de registro */
+}
+
+/* --- Estilo de la Navegación --- */
+nav {
+    font-size: 20px; /* Define el tamaño de la fuente dentro del nav */
+    text-align: center; /* Centra horizontalmente el contenido del nav */
+    display: flex; /* Utiliza flexbox para alinear los elementos en una línea horizontal */
+    align-items: center; /* Alinea verticalmente los elementos dentro del nav */
+    justify-content: center; /* Centra horizontalmente los elementos dentro del nav */
+    text-decoration: none; /* Elimina el subrayado de los enlaces del nav */
+    color: white; /* Define el color del texto de los enlaces del nav en blanco */
+    background-color: rgba(66, 94, 253, 0.477); /* Aplica un fondo azul semitransparente al nav */
+    border: 2px solid rgb(0, 0, 0); /* Añade un borde negro alrededor del nav */
+    border-radius: 50px; /* Redondea las esquinas del nav */
+}
+
+/* --- Estilo para la Tabla de Enlaces --- */
+table {
+    width: 100%; /* Hace que la tabla ocupe el 100% del ancho disponible */
+    border-collapse: collapse; /* Elimina el espacio entre las celdas de la tabla */
+    margin: 20px 0; /* Añade un margen superior e inferior de 20px a la tabla */
+}
+
+th, td {
+    padding: 12px; /* Añade un padding interno de 12px dentro de cada celda */
+    text-align: left; /* Alinea el texto dentro de las celdas a la izquierda */
+}
+
+th {
+    background-color: rgba(0, 49, 162, 0.7); /* Aplica un fondo azul semitransparente a los encabezados de la tabla */
+    color: white; /* Define el color del texto de los encabezados de la tabla en blanco */
+}
+
+tr:hover {
+    background-color: rgba(0, 49, 162, 0.7); /* Cambia el fondo de la fila cuando se pasa el cursor por encima */
+}
+
+/* --- Estilo de la Sección Principal --- */
+main {
+    text-align: center; /* Centra el contenido de la sección main horizontalmente */
+    font-size: 18px; /* Define el tamaño de la fuente dentro de la sección main */
+    margin: 20px auto; /* Añade un margen automático para centrar el contenido */
+    padding-top: 140px; /* Añade un padding superior para evitar que el contenido se superponga con la cabecera fija */
+}
+
+main a {
+    font-size: 18px; /* Define el tamaño de la fuente de los enlaces dentro de la sección main */
+    display: flex; /* Utiliza flexbox para alinear el texto y las imágenes dentro de los enlaces */
+    align-items: center; /* Alinea verticalmente el texto y las imágenes dentro de los enlaces */
+    justify-content: center; /* Centra horizontalmente el contenido de los enlaces */
+    width: 80%; /* Hace que los enlaces ocupen el 80% del ancho disponible */
+    margin: 10px auto; /* Añade un margen superior e inferior de 10px a los enlaces */
+    padding: 10px; /* Añade un padding interno de 10px dentro de los enlaces */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    color: rgb(255, 255, 255); /* Define el color del texto de los enlaces en blanco */
+    background-color: rgba(0, 2, 121, 0.467); /* Aplica un fondo azul semitransparente a los enlaces */
+    border: 2px solid rgb(0, 0, 0); /* Añade un borde negro alrededor de los enlaces */
+    border-radius: 10px; /* Redondea las esquinas de los enlaces */
+}
+
+main a img.icono {
+    margin-right: 10px; /* Añade un espacio de 10px a la derecha de la imagen dentro del enlace */
+    height: 60px; /* Define la altura de las imágenes dentro de los enlaces */
+    width: 60px; /* Define el ancho de las imágenes dentro de los enlaces */
+}
+
+.enlace-fondo {
+    background-image: url('../imagenes/Cancha2.jpg'); /* Aplica una imagen de fondo al enlace */
+}
+
+a.enlace-con-imagen {
+    background-image: url('../imagenes/Cancha.png'); /* Aplica una imagen de fondo a los enlaces con la clase 'enlace-con-imagen' */
+}
+
+a.enlace-con-imagen:hover {
+    background-image: url('../imagenes/Champiñon.gif'); /* Cambia la imagen de fondo cuando el cursor pasa por encima del enlace */
+}
+
+/* --- Estilo de la Lista de Temas Recientes --- */
+.recent-topics li {
+    list-style-type: none; /* Elimina los puntos de la lista predeterminados */
+    text-align: center; /* Centra horizontalmente el contenido de la lista */
+    display: flex; /* Utiliza flexbox para alinear el texto y las imágenes dentro de los elementos de la lista */
+    align-items: center; /* Alinea verticalmente el texto y las imágenes dentro de los elementos de la lista */
+    justify-content: center; /* Centra horizontalmente el contenido de la lista */
+    background-color: rgba(0, 64, 155, 0.8); /* Aplica un fondo azul semitransparente a los elementos de la lista */
+    border: 2px solid rgb(0, 0, 0); /* Añade un borde negro alrededor de los elementos de la lista */
+    width: 90%; /* Hace que los elementos de la lista ocupen el 90% del ancho disponible */
+    margin: 10px auto; /* Añade un margen superior e inferior de 10px y centra los elementos de la lista */
+    padding: 10px; /* Añade un padding interno de 10px dentro de los elementos de la lista */
+    border-radius: 10px; /* Redondea las esquinas de los elementos de la lista */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Aplica una sombra sutil para dar profundidad a los elementos de la lista */
+    box-sizing: border-box; /* Incluye el padding y el borde dentro del ancho total de los elementos */
+}
+
+.recent-topics img.icono {
+    margin-right: 20px; /* Añade un espacio de 20px a la derecha de la imagen dentro del elemento de la lista */
+    height: 60px; /* Define la altura de las imágenes dentro de los elementos de la lista */
+    width: 60px; /* Define el ancho de las imágenes dentro de los elementos de la lista */
+}
+
+/* --- Estilo del Pie de Página --- */
+footer {
+    margin-top: 50px; /* Añade un margen superior de 50px al pie de página */
+}
+
+footer a {
+    color: rgb(255, 255, 255); /* Define el color del texto de los enlaces del pie de página en blanco */
+    text-decoration: none; /* Elimina el subrayado de los enlaces del pie de página */
+}
+
+/* --- Estilos Específicos para la Página de Ronaldo y Messi --- */
+
+/* Estilo del video de fondo */
+#background-video {
+    position: fixed; /* Fija el video en la pantalla */
+    top: 0; /* Posiciona el video en la parte superior de la pantalla */
+    left: 0; /* Alinea el video con el borde izquierdo de la pantalla */
+    width: 100%; /* Hace que el video cubra todo el ancho de la pantalla */
+    height: 100%; /* Hace que el video cubra todo el alto de la pantalla */
+    object-fit: cover; /* Ajusta el video para que cubra toda el contenedor sin distorsionarse */
+    z-index: -1; /* Envía el video al fondo, detrás de otros elementos de la página */
+    opacity: 0.9; /* Ajusta la opacidad del video para hacerlo menos prominente */
+}
+
+main {
+    position: relative; /* Establece una posición relativa para asegurar que el contenido esté sobre el video de fondo */
+    z-index: 1; /* Asegura que el contenido esté por encima del video de fondo */
+    text-align: center; /* Centra horizontalmente el contenido dentro del main */
+    padding: 20px; /* Añade un padding interno de 20px al contenido del main */
+}
+
+/* Estilos dorados y negros específicos para la sección de Ronaldo y Messi */
+.header-container-especial {
+    display: flex; /* Utiliza flexbox para alinear los elementos en una línea horizontal */
+    justify-content: center; /* Centra horizontalmente los elementos dentro del contenedor */
+    align-items: center; /* Alinea verticalmente los elementos dentro del contenedor */
+}
+
+.titulo-con-marco-especial {
+    background-image: url('../imagenes/GOATS.jpg'); /* Aplica una imagen de fondo específica para esta sección */
+    color: transparent; /* Hace que el texto sea invisible, mostrando solo el fondo */
+    height: auto; /* Ajusta automáticamente la altura del contenedor */
+    width: auto; /* Ajusta automáticamente el ancho del contenedor */
+    border: 3px solid #FFD700; /* Añade un borde dorado alrededor del contenedor */
+    padding: 40px; /* Añade un padding interno de 40px al contenedor */
+    border-radius: 10px; /* Redondea las esquinas del contenedor */
+    background-color: #000000; /* Aplica un fondo negro semitransparente */
+}
+
+.golden-black .player-stats {
+    background-color: #000; /* Aplica un fondo negro a las estadísticas de los jugadores */
+    border: 2px solid #FFD700; /* Añade un borde dorado alrededor de las estadísticas de los jugadores */
+}
+
+.golden-black .player {
+    background-color: rgba(0, 0, 0, 0.7); /* Aplica un fondo negro semitransparente a cada jugador */
+    border: 2px solid #FFD700; /* Añade un borde dorado alrededor de cada jugador */
+    color: #FFD700; /* Define el color del texto en dorado */
+}
+
+.golden-black .player h2 {
+    color: #FFD700; /* Define el color del nombre del jugador en dorado */
+}
+
+.golden-black .player p {
+    color: #FFD700; /* Define el color de los párrafos en dorado */
+}
+
+.golden-black .player:hover {
+    background-color: rgba(255, 215, 0, 0.3); /* Cambia el fondo a dorado semitransparente cuando se pasa el cursor por encima del jugador */
+    border-color: #FFD700; /* Mantiene el borde dorado cuando se pasa el cursor por encima del jugador */
+}
+
+/* Estilo del contenedor de estadísticas de jugadores */
+.estadisticas-jugador {
+    display: flex; /* Utiliza flexbox para alinear los jugadores en una línea horizontal */
+    justify-content: space-around; /* Distribuye los jugadores de manera uniforme en el espacio disponible */
+    flex-wrap: wrap; /* Permite que los jugadores se envuelvan en múltiples líneas si es necesario */
+    text-align: center; /* Centra horizontalmente el texto dentro de las estadísticas de los jugadores */
+    margin: 20px 0; /* Añade un margen superior e inferior de 20px */
+}
+
+.player {
+    background-color: rgba(155, 190, 0, 0.733); /* Aplica un fondo amarillo semitransparente a cada jugador */
+    padding: 20px; /* Añade un padding interno de 20px dentro de cada bloque de jugador */
+    border-radius: 10px; /* Redondea las esquinas de los bloques de jugadores */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Aplica una sombra sutil para dar profundidad a los bloques de jugadores */
+    width: 45%; /* Define que cada bloque de jugador ocupe el 45% del ancho disponible */
+    box-sizing: border-box; /* Incluye el padding y el borde dentro del ancho total del bloque */
+    margin-bottom: 20px; /* Añade un margen inferior de 20px entre los bloques de jugadores */
+}
+
+.player img {
+    width: 50%; /* Define que la imagen del jugador ocupe el 50% del ancho del bloque */
+    height: auto; /* Ajusta automáticamente la altura de la imagen manteniendo las proporciones */
+    border-radius: 10px; /* Redondea las esquinas de la imagen */
+}
+
+.player h2 {
+    color: #FFD700; /* Define el color del nombre del jugador en dorado */
+    font-size: 24px; /* Define el tamaño de la fuente del nombre del jugador */
+    margin-bottom: 10px; /* Añade un margen inferior de 10px debajo del nombre del jugador */
+}
+
+.player p {
+    font-size: 18px; /* Define el tamaño de la fuente de los párrafos dentro de los bloques de jugadores */
+}
+
+/* Agrega un efecto hover dorado para cada jugador */
+.player:hover {
+    background-color: rgba(255, 215, 0, 0.2); /* Cambia el fondo a dorado semitransparente cuando se pasa el cursor por encima del jugador */
+    border: 2px solid #FFD700; /* Añade un borde dorado cuando se pasa el cursor por encima del jugador */
+}
+
